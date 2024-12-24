@@ -21,5 +21,5 @@ Check out the live demo [here](https://your-live-demo-url).
 
 1. **Clone the Repository**  
    ```bash
-   git clone https://github.com/your-username/conversation-ai-store.git  
-   cd conversation-ai-store  
+   git clone https://github.com/rahul0168/store-ai.git  
+   cd store-ai 
