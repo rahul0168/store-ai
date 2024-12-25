@@ -86,19 +86,16 @@
                     message: message,
                 },
                 success: function (response) {
-                    var parsedResponse = JSON.parse(response);
-
-                    // Append ChatGPT's response to the chat UI
-                    $('#chat-box').append(`   
+                    $('#chat-box').append(`
                         <div class="message">
                             <div>
                                 <strong class="text-green-600">ChatGPT:</strong>
-                                <span class="text-gray-700"></span>
+                                <span class="text-gray-700">${response.response}</span>
                             </div>
                         </div>
                     `);
 
-                    $('#chat-box .message:last-child .text-gray-700').html(parsedResponse.response);
+                  
 
                     // Scroll to the latest message
                     $('#chat-box').scrollTop($('#chat-box')[0].scrollHeight);
